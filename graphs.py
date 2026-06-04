@@ -49,7 +49,6 @@ sns.boxplot(
     palette='Greens'
 )
 
-# Customizações estéticas
 plt.title('Percentual de crianças e adolescentes na Escola por Faixa de Renda Domiciliar Per Capita e Ano',
           fontsize=14, fontweight='bold', pad=15)
 plt.xlabel(
@@ -57,7 +56,6 @@ plt.xlabel(
 plt.ylabel('Não Frequência Escolar (%)', fontsize=12)
 plt.ylim(-5, 105)
 
-# Rotaciona os nomes do eixo X um pouco para não cortar se o espaço for pequeno
 plt.xticks(rotation=15, ha='right')
 plt.legend(title='Ano de Referência', loc='upper left')
 
@@ -84,7 +82,7 @@ for year in years:
         x='V2009',
         y='Percentual_Nao_Frequenta',
         hue='V2009',
-        palette='Greens'  # Cor fixa já que cada gráfico representa um ano isolado
+        palette='Greens' 
     )
 
     plt.title(f'Percentual de Jovens que NÃO frequentam a Escola por Idade - Ano {year}',
